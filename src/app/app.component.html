@@ -1,0 +1,22 @@
+<app-header></app-header>
+<mat-tab-group>
+    <mat-tab label = " Art ">
+        <div class="container">
+            <app-flower-card 
+                *ngFor = "let i of [0,1,2]" 
+                [img]="postsImg[i]" 
+                [text]="postsTexts[i]"
+            ></app-flower-card>  
+        </div>
+    </mat-tab>
+    <mat-tab label = " Photography">
+        Photography
+    </mat-tab>
+    
+    <mat-tab label = " Info ">
+        Info
+    </mat-tab>
+
+</mat-tab-group>
+
+
